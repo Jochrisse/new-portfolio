@@ -110,6 +110,11 @@ input {
 
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden; /* Disable ALL scrolling */
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 .container{
@@ -515,3 +520,4 @@ input {
 /* For small devices */
 @media screen and (max-width: 350px) {
 }
+
