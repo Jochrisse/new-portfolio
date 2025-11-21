@@ -110,10 +110,7 @@ input {
 
 }
 
-html, body {
-    height: 100%;
-    overflow: hidden; /* Disable ALL scrolling */
-}
+
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
@@ -165,7 +162,10 @@ html, body {
     font-weight: var(--weight-700);
 }
 
-
+html, body {
+    height: 100%;
+    overflow: hidden; /* Disable ALL scrolling */
+}
 
 /*=============== HEADER & NAV ===============*/
 
@@ -520,4 +520,5 @@ html, body {
 /* For small devices */
 @media screen and (max-width: 350px) {
 }
+
 
