@@ -164,7 +164,8 @@ input {
 
 html, body {
     height: 100%;
-    overflow: hidden; /* Disable ALL scrolling */
+    overflow: hidden !important;
+    overscroll-behavior: none;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -520,5 +521,6 @@ html, body {
 /* For small devices */
 @media screen and (max-width: 350px) {
 }
+
 
 
