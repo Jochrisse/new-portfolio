@@ -24,7 +24,25 @@ navLinks.forEach(link => {
 
 
 /*==================== REMOVE MENU MOBILE ====================*/
+<script>
+    // Disable wheel scroll
+    window.addEventListener('wheel', function(e) {
+        e.preventDefault();
+    }, { passive: false });
 
+    // Disable touch scroll (mobile)
+    window.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+
+    // Disable keyboard scroll
+    window.addEventListener('keydown', function(e) {
+        let keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Space", "Home", "End"];
+        if (keys.includes(e.key)) {
+            e.preventDefault();
+        }
+    });
+</script>
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
@@ -56,5 +74,6 @@ tabs.forEach(tab =>{
 });
 
 /*=============== CONTACT FORM =============== */
+
 
 
